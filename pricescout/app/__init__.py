@@ -1,0 +1,1 @@
+"""PriceScout application package."""

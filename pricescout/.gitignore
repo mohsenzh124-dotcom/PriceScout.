@@ -1,0 +1,21 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+
+# Local environment files
+.env
+
+# Databases and logs
+*.db
+*.sqlite3
+*.log
+
+# Test and tooling artifacts
+.coverage
+.pytest_cache/
+.mypy_cache/

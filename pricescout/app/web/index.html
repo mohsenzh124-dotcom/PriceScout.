@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceScout - Price Comparison</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="page">
+        <header class="page__header">
+            <h1>PriceScout</h1>
+            <p>Search once, compare offers instantly.</p>
+        </header>
+
+        <section class="search-panel" aria-label="Price comparison search">
+            <label for="queryInput" class="search-panel__label">Product query</label>
+            <div class="search-panel__controls">
+                <input
+                    id="queryInput"
+                    name="q"
+                    type="text"
+                    placeholder="e.g. laptop, keyboard, monitor, GPU, headphones"
+                    autocomplete="off"
+                >
+                <button id="compareButton" type="button">Compare</button>
+            </div>
+            <p class="search-panel__hint">Results are fetched from <code>/api/compare</code>.</p>
+        </section>
+
+        <section id="statusMessage" class="status" role="status" aria-live="polite"></section>
+
+        <section id="resultsArea" class="results" aria-label="Comparison results"></section>
+    </main>
+
+    <script src="/static/app.js" defer></script>
+</body>
+</html>
