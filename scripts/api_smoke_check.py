@@ -4,10 +4,17 @@ from __future__ import annotations
 
 import json
 import os
+import sys
+from pathlib import Path
 from datetime import UTC, datetime
 from io import BytesIO
 from typing import Any
 from urllib.parse import quote_plus
+
+# Allow running as `python scripts/api_smoke_check.py` from the repository root.
+REPO_ROOT = Path(__file__).resolve().parents[1]
+if str(REPO_ROOT) not in sys.path:
+    sys.path.insert(0, str(REPO_ROOT))
 
 from pricescout.app.main import _DB, application
 from pricescout.app.models import Offer

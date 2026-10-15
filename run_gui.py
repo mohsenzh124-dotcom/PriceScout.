@@ -22,11 +22,8 @@ PORT = 8000
 BASE_URL = f"http://{HOST}:{PORT}"
 HEALTH_URL = f"{BASE_URL}/health"
 REQUIRED_PACKAGES = [
-    "fastapi",
-    "uvicorn",
     "requests",
     "beautifulsoup4",
-    "sqlalchemy",
 ]
 
 
