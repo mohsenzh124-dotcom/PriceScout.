@@ -1,4 +1,10 @@
-import uvicorn
+"""Start the PriceScout development server.
+
+Usage:
+    python run.py
+"""
+
+from pricescout.app.main import main
 
 if __name__ == "__main__":
-    uvicorn.run("pricescout.app.main:app", host="127.0.0.1", port=8000, reload=True)
+    main()
